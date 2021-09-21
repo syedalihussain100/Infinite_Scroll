@@ -20,7 +20,7 @@ body {
     min-width: 20rem;
     width: 70vw;
     margin: auto;
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,4 +58,9 @@ body {
 
 .description{
     font-size: 1.7rem;
+}
+
+
+.check{
+    color: red;
 }

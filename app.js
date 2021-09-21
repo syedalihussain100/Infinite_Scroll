@@ -19,8 +19,32 @@ const getPost = async () => {
         <p class="description">${currElm.body}</p>
     </div>
       `
-      Container.insertAdjacentHTML('beforeend',htmldata)
+        Container.insertAdjacentHTML('beforeend', htmldata)
     })
 }
-
+let check = document.querySelector('.check');
 getPost()
+const showData = () => {
+   check.classList.add('check');
+    setTimeout(() => {
+        check.classList.remove('check')
+        setTimeout(() => {
+            pageCount++
+            getPost()
+        }, 3000);
+    }, 1000);
+}
+
+
+window.addEventListener('scroll', () => {
+    const {
+        scrollHeight,
+        scrollTop,
+        clientHeight
+    } = document.documentElement;
+    //   if else condition to scroll here;
+    if (scrollTop + clientHeight >= scrollHeight) {
+        console.log('iam a bottom');
+        showData()
+    }
+})
