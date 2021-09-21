@@ -25,9 +25,7 @@ const getPost = async () => {
 let check = document.querySelector('.check');
 getPost()
 const showData = () => {
-   check.classList.add('check');
     setTimeout(() => {
-        check.classList.remove('check')
         setTimeout(() => {
             pageCount++
             getPost()
@@ -36,15 +34,23 @@ const showData = () => {
 }
 
 
-window.addEventListener('scroll', () => {
-    const {
-        scrollHeight,
-        scrollTop,
-        clientHeight
-    } = document.documentElement;
-    //   if else condition to scroll here;
-    if (scrollTop + clientHeight >= scrollHeight) {
-        console.log('iam a bottom');
-        showData()
-    }
-})
+// window.addEventListener('scroll', () => {
+//     const {
+//         scrollHeight,
+//         scrollTop,
+//         clientHeight
+//     } = document.documentElement;
+//     //   if else condition to scroll here;
+//     if (scrollTop + clientHeight >= scrollHeight -1) {
+//         console.log('iam a bottom');
+//         showData()
+//     }
+// })
+
+let loadmore = document.getElementById('loadmore');
+
+loadmore.addEventListener('click',handleloaddata);
+
+function handleloaddata(){
+    showData()
+}
