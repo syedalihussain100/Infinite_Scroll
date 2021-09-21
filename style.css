@@ -20,5 +20,21 @@ body {
     min-width: 20rem;
     width: 70vw;
     margin: auto;
-    background-color: #fff;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container h1 {
+    font-size: 5rem;
+}
+
+.container .posts {
+    margin-top: 5rem;
+    background: aliceblue;
+    padding: 2rem 5rem;
+    border-radius: 1rem;
+    box-shadow: 0 2rem 2rem -1.7rem rgba(0, 0, 0, 0.3);
 }
