@@ -7,11 +7,18 @@
     font-family: 'Nunito', sans-serif;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
     background-color: black;
     padding: 5rem 10rem;
+}
+
+.container {
+    min-width: 20rem;
+    width: 70vw;
+    margin: auto;
+    background-color: #fff;
 }
