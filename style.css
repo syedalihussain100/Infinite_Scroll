@@ -62,5 +62,6 @@ body {
 
 
 .check{
-    color: red;
+    color: #fff;
+    font-size: 4rem;
 }
