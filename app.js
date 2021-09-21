@@ -26,11 +26,9 @@ let check = document.querySelector('.check');
 getPost()
 const showData = () => {
     setTimeout(() => {
-        setTimeout(() => {
-            pageCount++
-            getPost()
-        }, 3000);
-    }, 1000);
+        pageCount++
+        getPost()
+    }, 200);
 }
 
 
@@ -49,8 +47,8 @@ const showData = () => {
 
 let loadmore = document.getElementById('loadmore');
 
-loadmore.addEventListener('click',handleloaddata);
+loadmore.addEventListener('click', handleloaddata);
 
-function handleloaddata(){
+function handleloaddata() {
     showData()
 }
