@@ -48,3 +48,13 @@ body {
     place-items: center;
     font-size: 2rem;
 }
+
+.title{
+    font-size: 2.2rem;
+    margin: 2rem;
+    text-transform: capitalize;
+}
+
+.description{
+    font-size: 1.7rem;
+}
